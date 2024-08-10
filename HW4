@@ -1,0 +1,19 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+int main() {
+    cout << "Enter a number or string: ";
+
+    if (cin.peek() >= '0' && cin.peek() <= '9') {
+            int number;
+            cin >> number;
+            cout << "You entered this number: " << number << endl;
+    } else {
+        string STRING;
+        cin >> STRING;
+        cout << "You entered this string: " << STRING << endl;
+    }
+
+    return 0;
+}
